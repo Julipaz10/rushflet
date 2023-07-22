@@ -195,6 +195,16 @@ header nav ul li a:hover{
 
 }
 
+.fin h2{
+    font-size: 25px;
+    background-color: #458081;
+    text-align: center;
+    padding: 10px;
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
 .position{
     position: fixed;
     bottom: 100px;
@@ -208,14 +218,6 @@ header nav ul li a:hover{
 
 
 /*-------------FOOTER----------------*/
-@media screen and (max-width:640px){   /*PARA TABLET*/
-    header{
-        position: static;
-    }
-    .position{
-        display: none;
-    }
-}
 
 @media screen and (max-width:950px){     /*HEADER IMAGEN*/
     .subtitulo{
@@ -235,7 +237,6 @@ header nav ul li a:hover{
     }
 }
 
-
 @media screen and (max-width:720px){
     .hero h2{
         font-size: 30px; 
@@ -249,13 +250,26 @@ header nav ul li a:hover{
     }
 }
 
-
+@media screen and (max-width:640px){   /*PARA TABLET*/
+    header{
+        position: static;
+    }
+    .position{
+        display: none;
+    }
+}
 
 @media screen and (max-width:515px){   /*PARA MOBILE*/
     header{
         flex-direction: column;
     }
+}
 
+@media screen and (max-width:490px) {
+    .mediosdepago {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 footer{
@@ -269,7 +283,7 @@ footer h3{
     font-size: 30px;
     color:#96075f;
     padding-bottom: 15px;
-    
+    text-align: center;
 }
 
 footer{
@@ -376,6 +390,34 @@ i{
     color:#458081;
 }
 
+/*--------------MAINMUDANZAS--------------*/
+/*--------------FOOTERMUDANZAS------------*/
+
+/*--------------HEADERCONTACTO------------*/
+
+.mensaje h2{
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+
+
+/*--------------MAINCONTACTO--------------*/
+/*--------------FOOTERCONTACTO------------*/
 
 
 
