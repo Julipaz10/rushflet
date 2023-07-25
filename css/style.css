@@ -205,6 +205,15 @@ header nav ul li a:hover{
     
 }
 
+.redessociales h3{
+    font-size: 30px;
+    color: #7c1554;
+}
+
+.redessociales div a {
+    margin: 5px;
+}
+
 .position{
     position: fixed;
     bottom: 100px;
