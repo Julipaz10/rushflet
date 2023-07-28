@@ -142,9 +142,9 @@ header nav ul li a:hover{
     background-color: #458081;
     color: white;
     margin: 30px;
+    -webkit-box-shadow: 4px 39px 146px -3px rgba(0,0,0,0.7);
+    -moz-box-shadow: 4px 39px 146px -3px rgba(0,0,0,0.7);
     box-shadow: 4px 39px 146px -3px rgba(0,0,0,0.7);
--webkit-box-shadow: 4px 39px 146px -3px rgba(0,0,0,0.7);
--moz-box-shadow: 4px 39px 146px -3px rgba(0,0,0,0.7);
 }
 
 .servicios div h3{
@@ -189,9 +189,9 @@ header nav ul li a:hover{
     width: 80px;
     height: 80px;
     margin: 20px;
-    box-shadow: 4px 39px 146px -3px rgba(0,0,0,0.7);
     -webkit-box-shadow: 4px 39px 146px -3px rgba(0,0,0,0.7);
     -moz-box-shadow: 4px 39px 146px -3px rgba(0,0,0,0.7);
+    box-shadow: 4px 39px 146px -3px rgba(0,0,0,0.7);
 
 }
 
@@ -336,9 +336,9 @@ footer div a img{
 
 
 .grid-item{
-    box-shadow: 4px 39px 146px -3px rgba(0,0,0,0.7);
 -webkit-box-shadow: 4px 39px 146px -3px rgba(0,0,0,0.7);
 -moz-box-shadow: 4px 39px 146px -3px rgba(0,0,0,0.7);
+box-shadow: 4px 39px 146px -3px rgba(0,0,0,0.7);
     position: relative;
 }
 
