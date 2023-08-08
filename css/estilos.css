@@ -12,6 +12,13 @@ body {
     font-size: map-get($fonts-size , extra-large );
 } */
 /* color */
+.parrafo, .nuestrosservicios div p {
+  font-size: 24px;
+  color: #458081;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px; }
+
 /*HEADER INICIO*/
 header {
   background-color: #3a4783;
@@ -22,6 +29,8 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 1; }
+  header .abrir-menu {
+    display: none; }
   header h1 {
     color: white;
     font-size: 50px;
@@ -41,9 +50,6 @@ header {
           background-color: #458081;
           border-radius: 5px; }
 
-.abrir-menu {
-  display: none; }
-
 /*HEADERNOSOTROS*/
 .heronosotros {
   background-color: #4580812d; }
@@ -56,26 +62,6 @@ header {
     font-size: 20px;
     padding: 20px;
     margin: 10px; }
-
-/*HEADERSERVICIOS*/
-.mudarte {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px;
-  background-color: #458081; }
-  .mudarte h2 {
-    text-align: center;
-    font-size: 30px;
-    color: white;
-    padding: 40px; }
-  .mudarte div img {
-    height: 80px;
-    width: 80px; }
-  .mudarte div div h3 {
-    font-size: 20px;
-    text-align: center;
-    color: white; }
 
 /*HEADERNOSCONTACTO*/
 .mensaje h2 {
@@ -136,7 +122,8 @@ header {
     .subtitulo div p {
       font-size: 20px;
       padding: 40px;
-      text-align: center; }
+      text-align: center;
+      width: 100%; }
   .subtitulo img {
     width: 500px;
     height: 500px; }
@@ -227,15 +214,16 @@ header {
   font-size: 25px; }
 
 .nuestrosservicios h3 {
-  font-size: 40px;
+  font-size: 30px;
   color: #458081; }
 
-.nuestrosservicios div img {
-  width: 350px;
-  height: 300px; }
-
-.nuestrosservicios div h4 {
-  font-size: 20px; }
+.nuestrosservicios div div {
+  display: flex;
+  justify-content: center;
+  gap: 40px; }
+  .nuestrosservicios div div img {
+    width: 400px;
+    height: 350px; }
 
 /*NOSOTROS*/
 .grid-galeria {
@@ -262,12 +250,75 @@ header {
     background-color: rgba(55, 0, 255, 0.342);
     width: 100%;
     text-align: center; }
-  .grid-item .img-4 {
-    grid-column: span 2; }
-  .grid-item .img-6 {
-    grid-row: span 2; }
-  .grid-item .img-8 {
-    grid-row: span 2; }
+
+.img-4 {
+  grid-column: span 2; }
+
+.img-6 {
+  grid-row: span 2; }
+
+.img-8 {
+  grid-row: span 2; }
+
+/*HEADERSERVICIOS*/
+.mudarte {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: #458081; }
+  .mudarte .servicios-contenedor {
+    display: flex;
+    gap: 50px; }
+    .mudarte .servicios-contenedor div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px; }
+  .mudarte h2 {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding: 40px; }
+  .mudarte div img {
+    height: 80px;
+    width: 80px; }
+  .mudarte div div h3 {
+    font-size: 20px;
+    text-align: center;
+    color: white; }
+
+/* CONTACTO */
+.mensaje h2 {
+  text-align: center;
+  padding: 30px;
+  font-size: 30px; }
+
+.plataforma {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .plataforma form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px; }
+    .plataforma form div {
+      display: flex;
+      flex-direction: column;
+      gap: 10px; }
+      .plataforma form div input[type="text"] {
+        border: none;
+        border-bottom: black solid 1px; }
+      .plataforma form div input {
+        width: 450px; }
+        .plataforma form div input:focus-visible {
+          outline: none; }
+
+.mapa {
+  display: flex;
+  justify-content: center;
+  padding: 20px; }
 
 footer {
   display: flex;
@@ -289,7 +340,6 @@ footer {
   .subtitulo {
     flex-direction: column; }
   .subtitulo {
-    width: 80%;
     text-align: center;
     margin: 20px; }
   .subtitulo img {
@@ -314,22 +364,22 @@ footer {
     display: none; } }
 
 @media screen and (max-width: 550px) {
-  .abrir-menu {
-    display: block;
-    display: none; }
-  .nav {
-    display: none; }
-  .nav {
-    display: flex;
+  header .abrir-menu {
+    display: block; }
+  header .nav {
     flex-direction: column;
+    display: flex;
     align-items: end;
     gap: 1rem;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
-    bottom: 0;
     background-color: #458081;
-    padding: 20px; }
+    padding: 20px;
+    height: 100vh;
+    z-index: 3; }
+  header .ocultar {
+    display: none; }
   .nav-list {
     flex-direction: column;
     align-items: end; } }
@@ -350,7 +400,9 @@ footer {
   align-items: center;
   padding: 25px; }
 
-/*contanto*/
-@media screen and (max-width: 600px) {
-  .mapa {
-    align-items: flex-end; } }
+/*contacto*/
+@media screen and (max-width: 800px) {
+  .plataforma {
+    flex-direction: column; }
+    .plataforma form div input {
+      width: 300px; } }

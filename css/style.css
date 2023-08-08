@@ -417,26 +417,12 @@ i{
     font-size: 30px;
 }
 
-.form{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-.mapa {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-
-
 
 /*--------------MAINCONTACTO--------------*/
 /*--------------FOOTERCONTACTO------------*/
 @media screen and (max-width:640px){
 .mapa{
-    flex-direction: colum;
+    flex-direction: column;
 }
 }
 

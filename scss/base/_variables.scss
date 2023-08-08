@@ -14,4 +14,20 @@ $fonts-size: (
 $colores: ( 
     "color-primario": #458081, 
     "color-secundario":#4580812d
-)
+);
+
+
+@mixin input (){
+    width: 450px;
+    &:focus-visible{
+        outline: none;
+    }
+}
+
+.parrafo{
+    font-size: 24px;
+    color:#458081;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
