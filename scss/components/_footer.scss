@@ -1,0 +1,22 @@
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+    background-color: hsl(229, 39%, 37%);
+    h3{
+        font-size: 30px;
+        color:#96075f;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+    
+    div{
+        a{
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}

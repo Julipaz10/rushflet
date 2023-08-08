@@ -1,0 +1,99 @@
+
+@media screen and (max-width:950px){     /*HEADER IMAGEN*/
+    .subtitulo{
+        flex-direction: column;
+    }
+    
+    .subtitulo{
+        width: 80%;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .subtitulo img{
+        width: 80%;
+        height: 400px;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width:720px){
+    .hero h2{
+        font-size: 30px; 
+    }
+    .hero p{
+        font-size: 25px;
+    }
+    .serviciosadicionales{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:640px){   /*PARA TABLET*/
+    header{
+        position: static;
+    }
+    .position{
+        display: none;
+    }
+}
+
+@media screen and (max-width:550px){
+
+.abrir-menu{
+    display: block;
+    display: none;
+
+}
+.nav{
+    display: none;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #458081;
+    padding: 20px;
+
+}
+.nav-list{
+    flex-direction: column;
+    align-items: end;
+
+}
+}
+
+
+@media screen and (max-width:515px){   /*PARA MOBILE*/
+    header{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:490px) {
+    .mediosdepago {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+}
+
+
+/*contanto*/
+@media screen and (max-width:600px){
+    .mapa{
+        align-items: flex-end;
+    }
+    }

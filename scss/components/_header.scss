@@ -1,0 +1,113 @@
+/*HEADER INICIO*/
+header{
+    background-color: hsl(229, 39%, 37%);
+    padding: 25px 10px 25px 10px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    h1{
+            color: white;
+            font-size: 50px;
+            font-family: 'Ysabeau Infant', sans-serif;
+            font-weight: 900;
+        span{
+                color: #458081;
+            }
+        }
+    nav{
+        ul{
+            list-style: none;
+            display: flex;
+            li{
+                margin: 5px;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    &:hover{
+                        background-color:#458081;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.abrir-menu{
+    display: none;
+}
+
+
+
+
+/*HEADERNOSOTROS*/
+.heronosotros{
+    background-color: #4580812d;
+
+h2{
+    text-align: center;
+    font-size: 45px;
+    color:#458081;
+    padding:40px;
+}
+
+p{
+    font-size: 20px;
+    padding:20px;
+    margin:10px;
+}
+}
+
+/*HEADERSERVICIOS*/
+.mudarte{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color:#458081;
+h2{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding:40px;
+}
+div{
+    img{
+    height: 80px;
+    width: 80px;
+}
+div{
+h3{
+    font-size: 20px;
+    text-align: center;
+    color:white;
+}
+}
+}
+}
+/*HEADERNOSCONTACTO*/
+.mensaje{
+
+h2{
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+}
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+
