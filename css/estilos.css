@@ -8,7 +8,10 @@
 body {
   font-family: 'Ysabeau Infant', sans-serif; }
 
-/*LISTAS*/
+/* h1{
+    font-size: map-get($fonts-size , extra-large );
+} */
+/* color */
 /*HEADER INICIO*/
 header {
   background-color: #3a4783;
@@ -125,15 +128,15 @@ header {
   align-items: center;
   padding: 40px; }
   .subtitulo div {
-    width: 50%; }
-  .subtitulo h2 {
-    font-size: 40px;
-    text-align: center;
-    color: #458081; }
-  .subtitulo p {
-    font-size: 20px;
-    padding: 40px;
-    text-align: center; }
+    /*     width: 50%; */ }
+    .subtitulo div h2 {
+      font-size: 40px;
+      text-align: center;
+      color: #458081; }
+    .subtitulo div p {
+      font-size: 20px;
+      padding: 40px;
+      text-align: center; }
   .subtitulo img {
     width: 500px;
     height: 500px; }

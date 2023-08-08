@@ -45,12 +45,13 @@ header{
 
 /*HEADERNOSOTROS*/
 .heronosotros{
-    background-color: #4580812d;
+    background-color: map-get($colores 
+    , color-secundario );
 
 h2{
     text-align: center;
     font-size: 45px;
-    color:#458081;
+    color: map-get($colores , color-primario );
     padding:40px;
 }
 

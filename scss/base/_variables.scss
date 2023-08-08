@@ -1,13 +1,17 @@
-/*LISTAS*/
 
-$paleta-colores: hsl(229, 39%, 37%), #458081, white, white solid, dimgray,#7c1554, #96075f,  #4580812d, rgba(55, 0, 255, 0.342);
+$fonts-size: (
+    'normal': 16px,
+    'large': 20px,
+    'extra-large': 24px
+);
 
-$font-size:
-20px,
-25px,
-30px,
-40px,
-45px,
-50px,
-70px;
 
+
+/* h1{
+    font-size: map-get($fonts-size , extra-large );
+} */
+/* color */
+$colores: ( 
+    "color-primario": #458081, 
+    "color-secundario":#4580812d
+)
