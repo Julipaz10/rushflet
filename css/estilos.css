@@ -211,11 +211,15 @@ header {
 
 /*SERVICIOS*/
 .nuestrosservicios h2 {
-  font-size: 25px; }
+  font-size: 25px;
+  padding: 20px;
+  text-align: center; }
 
 .nuestrosservicios h3 {
-  font-size: 30px;
-  color: #458081; }
+  font-size: 40px;
+  color: #458081;
+  padding: 10px;
+  text-align: center; }
 
 .nuestrosservicios div div {
   display: flex;
@@ -328,7 +332,7 @@ footer {
   background-color: #3a4783; }
   footer h3 {
     font-size: 30px;
-    color: #96075f;
+    color: white;
     padding-bottom: 15px;
     text-align: center; }
   footer div a img {
@@ -399,6 +403,14 @@ footer {
   justify-content: space-around;
   align-items: center;
   padding: 25px; }
+
+/* SERVICIOS */
+@media screen and (max-width: 800px) {
+  .servicios-contenedor {
+    flex-direction: column; }
+  div img {
+    flex-direction: column;
+    display: flex; } }
 
 /*contacto*/
 @media screen and (max-width: 800px) {

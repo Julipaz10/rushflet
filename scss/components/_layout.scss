@@ -6,7 +6,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: #458081;
+    color: map-get($colores , color-primario );
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -45,7 +45,7 @@ div{
     h2{
         font-size: 40px;
         text-align: center;
-        color: #458081;
+        color: map-get($colores , color-primario );
     }
     
     p{
@@ -86,7 +86,7 @@ div{
     width: 250px;
     height: 350px; 
     text-align: center;
-    background-color: #458081;
+    background-color: map-get($colores , color-primario );
     color: white;
     margin: 30px;
     -webkit-box-shadow: 4px 39px 146px -3px rgba(0,0,0,0.7);
@@ -125,7 +125,7 @@ h3{
     padding: 60px;
 
 h3{
-    color:#458081;
+    color: map-get($colores , color-primario );
     display: grid;
     place-items: center;
 }
@@ -141,7 +141,7 @@ img{
 
 h4{
     text-align: center;
-    color:#458081;
+    color: map-get($colores , color-primario );
     font-size: 20px;
 }
 }
@@ -160,7 +160,7 @@ img{
 
 h2{
     font-size: 25px;
-    background-color: #458081;
+    background-color: map-get($colores , color-primario );
     text-align: center;
     padding: 10px;
     color:white;
@@ -187,10 +187,14 @@ a{
 
 h2{
     font-size: 25px;
+    padding: 20px;
+    text-align: center;
 }
 h3{
-    font-size: 30px;
-    color:#458081;
+    font-size: 40px;
+    color: map-get($colores , color-primario );
+    padding:10px;
+    text-align: center;
 }
 
 div{
@@ -263,7 +267,7 @@ h3{
     justify-content: space-between;
     align-items: center;
     padding: 30px;
-    background-color:#458081;
+    background-color: map-get($colores , color-primario );
     .servicios-contenedor{
         display: flex;
         gap: 50px;

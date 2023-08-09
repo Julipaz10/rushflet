@@ -93,6 +93,21 @@ footer{
 }
 
 
+
+
+/* SERVICIOS */
+@media screen and (max-width:800px){
+    .servicios-contenedor{
+        flex-direction: column;
+    }
+    div{
+        img{
+            flex-direction: column;
+            display: flex;
+        }
+    }
+}
+
 /*contacto*/
 @media screen and (max-width:800px){
     .plataforma{
