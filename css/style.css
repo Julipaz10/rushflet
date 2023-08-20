@@ -163,7 +163,8 @@ header nav ul li a:hover{
     color: white;
     display: flex;
     justify-content: space-around;
-    padding: 60px;
+    padding: 50px;
+    margin: 30px;
 }
 
 .serviciosadicionales h3{

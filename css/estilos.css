@@ -194,8 +194,8 @@ header {
   .position img {
     width: 50px; }
 
-.fin h2 {
-  font-size: 25px;
+.fin h3 {
+  font-size: 20px;
   background-color: #458081;
   text-align: center;
   padding: 10px;
@@ -210,12 +210,12 @@ header {
   margin: 5px; }
 
 /*SERVICIOS*/
-.nuestrosservicios h2 {
+.nuestrosservicios h3 {
   font-size: 25px;
   padding: 20px;
   text-align: center; }
 
-.nuestrosservicios h3 {
+.nuestrosservicios h4 {
   font-size: 40px;
   color: #458081;
   padding: 10px;
@@ -330,14 +330,16 @@ footer {
   align-items: center;
   padding: 25px;
   background-color: #3a4783; }
-  footer h3 {
-    font-size: 30px;
-    color: white;
-    padding-bottom: 15px;
-    text-align: center; }
-  footer div a img {
-    width: 50px;
-    height: 50px; }
+
+.redessociales h4 {
+  font-size: 30px;
+  color: white;
+  padding-bottom: 15px;
+  text-align: center; }
+
+.redessociales div a img {
+  width: 50px;
+  height: 50px; }
 
 @media screen and (max-width: 950px) {
   /*HEADER IMAGEN*/
@@ -355,10 +357,14 @@ footer {
   .hero h2 {
     font-size: 30px; }
   .hero p {
-    font-size: 25px; }
+    font-size: 25px; } }
+
+@media screen and (max-width: 700px) {
   .serviciosadicionales {
+    display: flex;
     flex-direction: column;
-    text-align: center; } }
+    justify-content: center;
+    align-items: center; } }
 
 @media screen and (max-width: 640px) {
   /*PARA TABLET*/
@@ -393,10 +399,12 @@ footer {
   header {
     flex-direction: column; } }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 500px) {
   .mediosdepago {
+    display: flex;
     flex-direction: column;
-    text-align: center; } }
+    justify-content: center;
+    align-items: center; } }
 
 footer {
   display: flex;
@@ -412,6 +420,7 @@ footer {
     flex-direction: column;
     display: flex; } }
 
+/*Nosotros*/
 /*contacto*/
 @media screen and (max-width: 800px) {
   .plataforma {

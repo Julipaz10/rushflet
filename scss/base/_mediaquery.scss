@@ -16,6 +16,8 @@
     }
 }
 
+
+
 @media screen and (max-width:720px){
     .hero h2{
         font-size: 30px; 
@@ -23,11 +25,18 @@
     .hero p{
         font-size: 25px;
     }
-    .serviciosadicionales{
-        flex-direction: column;
-        text-align: center;
+
+}
+@media screen and (max-width:700px){
+.serviciosadicionales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     }
 }
+
+
 
 @media screen and (max-width:640px){   /*PARA TABLET*/
     header{
@@ -78,12 +87,15 @@ header{
     }
 }
 
-@media screen and (max-width:490px) {
+@media screen and (max-width:500px) {
     .mediosdepago {
+        display: flex;
         flex-direction: column;
-        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 }
+
 
 footer{
     display: flex;
@@ -107,6 +119,11 @@ footer{
         }
     }
 }
+/*Nosotros*/
+@media screen and (max-width:420px){
+
+    }
+
 
 /*contacto*/
 @media screen and (max-width:800px){

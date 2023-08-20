@@ -4,14 +4,16 @@ footer{
     align-items: center;
     padding: 25px;
     background-color: hsl(229, 39%, 37%);
-    h3{
+}
+.redessociales{
+
+    h4{
         font-size: 30px;
-        color: white;
+        color: map-get($colores , color-terciario );
         padding-bottom: 15px;
         text-align: center;
     }
-    
-    div{
+        div{
         a{
             img{
                 width: 50px;
